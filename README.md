@@ -1,8 +1,7 @@
 
-![Demo Preview](file:///C:/Users/User/Downloads/logobb.svg)
-
 
 BlogBot Studio
+
 BlogBot Studio is a full-stack web platform that helps users generate, manage, and publish visually stunning blog content with ease. Powered by AI and backed by a robust admin system, BlogBot Studio blends automation with creativity to streamline blogging for individuals and teams.
 
 🚀 Features
@@ -71,7 +70,11 @@ JWT_SECRET=your_jwt_secret
 📬 Contact & Credits
 Built and maintained by Anirudh
 Want to collaborate, contribute, or ask questions?
+
 📧 sharma23ani@gmail.com
+
 🌐 anirudh46-cse
+
+
 
 Want me to write a short tagline or add screenshots and contribution guidelines next? Or generate a matching LICENSE file and deploy instructions? Let’s polish this into launch-ready shape ✨
