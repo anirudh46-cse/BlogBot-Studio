@@ -1,3 +1,7 @@
+
+![Demo Preview](file:///C:/Users/User/Downloads/logobb.svg)
+
+
 BlogBot Studio
 BlogBot Studio is a full-stack web platform that helps users generate, manage, and publish visually stunning blog content with ease. Powered by AI and backed by a robust admin system, BlogBot Studio blends automation with creativity to streamline blogging for individuals and teams.
 
