@@ -44,6 +44,7 @@ npm install
 
 # run both frontend and backend (if using concurrently)
 npm run dev
+
 npm run server
 
 
