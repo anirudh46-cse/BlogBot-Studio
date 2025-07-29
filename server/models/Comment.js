@@ -4,12 +4,11 @@ const commentSchema = new mongoose.Schema({
   blogId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Blog',
-    required: true
   },
   author: {
   type :  String,
-  required: true,
-  trim : true
+  required: false,
+  default: 'Anonymous'
   },
   content:{
     type : String,
@@ -19,7 +18,16 @@ const commentSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now
-  }
+  },
+  updatedAt: {
+    type: Date,
+    default: Date.now
+  },
+});
+commentSchema.pre('save', function(next) {
+  if(!this.author) {
+    this.author = 'Anonymous';}
+    next();
 });
 
 const Comment = mongoose.model('Comment', commentSchema);

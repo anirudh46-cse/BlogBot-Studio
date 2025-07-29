@@ -3,7 +3,9 @@ import Comment from '../models/Comment.js';
 
 const router = express.Router();
 
-router.post('/', async (req, res) => {
+router.post('/add-comment', async (req, res) => {
+  const blogId = req.params.id;
+  const { author, content } = req.body;
   try {
     console.log('📝 Incoming comment body:', req.body);
     const { blogId, author, content } = req.body;
@@ -22,9 +24,21 @@ router.post('/', async (req, res) => {
 
     res.status(201).json({ message: 'Comment saved successfully' });
   } catch (error) {
-    console.error('❌ Error saving comment:', error.message);
+    console.error(' Error saving comment:', error.message);
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+
+router.get('/', async (req, res) => {
+  try {
+    const comments = await Comment.find();
+    res.json({success: true,comments});
+  } catch (error) {
+    console.error(' Error fetching comments:', error.message);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+
 
 export default router;

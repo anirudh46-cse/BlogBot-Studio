@@ -13,7 +13,7 @@ import {Toaster} from 'react-hot-toast'
 import { useAppContext } from './context/AppContext'
 import ErrorBoundary from './components/ErrorBoundary';
 import AdminComment from './pages/admin/AdminComment'; 
-import BlogPost from './pages/BlogPost';
+import CommentTableItem from './components/admin/CommentTableItem';
 
 
 const App = () => {
@@ -45,8 +45,8 @@ const App = () => {
         <Route index element={<Dashboard/>}/>
         <Route path='addBlog' element={<AddBlog/>}/>
         <Route path='ListBlog' element={<ListBlog/>}/>
-        <Route path='comments' element={<Comments/>}/>
-        <Route path="/admin/comment" element={<AdminComment/>} />
+        <Route path='comments' element={<Comment/>}/>
+        <Route path="Comment" element={<AdminComment/>} />
         </Route>
       </Routes>
     </div>
