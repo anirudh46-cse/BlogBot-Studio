@@ -22,6 +22,8 @@ const CommentTableItem = ({comment, fetchComments}) => {
         }
 
       }catch(error){
+        const message = error.response?.data?.message || error.message;
+
         toast.error(error.message)
 
       }
@@ -41,6 +43,16 @@ const CommentTableItem = ({comment, fetchComments}) => {
         }
 
       }catch(error){
+        const message = error.response?.data?.message || error.message;
+        console.error('Error deleting comment:', message);
+        if (error.response?.status === 404) {
+          toast.error('Comment not found');
+        }
+        else if (error.response?.status === 500) {
+          toast.error('Internal server error');
+        } else {
+          toast.error('An unexpected error occurred');
+        }
         toast.error(error.message)
 
       }
@@ -49,13 +61,13 @@ const CommentTableItem = ({comment, fetchComments}) => {
 
 
        return (
-    <tr className='order-y border-gray-300'>
+    <tr className='border-y hover:bg-gray-50 transition-all'>
 
    <td className='px-6 py-4'>
     <b className='font-medium text-gray-600'>Blog</b>: {blog.title}
     <br />
     <br />
-    <b className='font-medium text-gray-600'>Name</b>: {comment.name}
+    <b className='font-medium text-gray-600'>Name</b>: {comment.author}
     <br />
     <b className='font-medium text-gray-600'>Comment</b>: {comment.content} 
 

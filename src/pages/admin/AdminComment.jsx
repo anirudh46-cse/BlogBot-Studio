@@ -7,11 +7,11 @@ const AdminComment = () => {
 
   const fetchComments = async () => {
     try {
-      const { data } = await axios.get('/api/comments'); // adjust if needed
+      const { data } = await axios.get('/api/comments'); 
       data.success ? setComments(data.comments) : toast.error(data.message);
     } catch (error) {
       toast.error('Failed to fetch comments');
-      console.error('❌ AdminComment error:', error.message);
+      console.error(' AdminComment error:', error.message);
     }
   };
 

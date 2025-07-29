@@ -93,7 +93,7 @@ const AddBlog = () => {
                 <img src={! image ? assets.upload_area : URL.createObjectURL(image)} alt=""  className='mt-2 h-16 rounded cursor-pointer'/>
                 <input  onChange={(e)=> setImage(e.target.files[0])} type="file" id='image' hidden required />
             </label>
-
+            
             <p className='mt-4'>Blog Title
 
             </p>
