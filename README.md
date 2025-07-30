@@ -28,8 +28,12 @@ Pre-built buttons to share posts on Facebook, Twitter, and more.
 📦 Installation
 git clone https://github.com/anirudh46-cse/BlogBot-Studio.git
 cd BlogBot-Studio
+
 npm install
-npm run dev  # if using concurrently
+
+npm run dev
+
+# if using concurrently
 
 
 ⚙️ Environment Setup
@@ -53,7 +57,9 @@ Multi-author publishing, analytics, and performance metrics.
 
 📬 Contact & Credits
 Built and maintained by Anirudh
+
 📧 sharma23ani@gmail.com
+
 🌐 GitHub Repository
 
 
