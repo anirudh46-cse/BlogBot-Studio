@@ -1,8 +1,9 @@
-📝 BlogBot Studio
+ # 📝 BlogBot Studio
 
 BlogBot Studio is a full-stack web platform that helps users generate, manage, and publish visually stunning blog content with ease. Powered by AI and backed by a robust admin system, it blends automation with creativity to streamline blogging for individuals and teams.
 
 🚀 Features
+
 - AI-Powered Content Generation
 Generate blogs using natural language prompts via Gemini integration.
 - Admin Dashboard
@@ -26,18 +27,21 @@ Pre-built buttons to share posts on Facebook, Twitter, and more.
 
 
 📦 Installation
+
 git clone https://github.com/anirudh46-cse/BlogBot-Studio.git
+
 cd BlogBot-Studio
 
 npm install
 
 npm run dev
 
-# if using concurrently
+### if using concurrently
 
 
 ⚙️ Environment Setup
 Create a .env file with the following:
+
 VITE_BASE_URL=http://localhost:3000
 MONGODB_URI=mongodb://localhost:27017/blogbot
 IMAGEKIT_PUBLIC_KEY=your_public_key
@@ -47,6 +51,7 @@ JWT_SECRET=your_jwt_secret
 
 
 💸 Monetization Plans
+
 - Freemium Model
 Limited AI generations for free users; unlock premium features via subscription.
 - Template Marketplace
@@ -56,10 +61,11 @@ Multi-author publishing, analytics, and performance metrics.
 
 
 📬 Contact & Credits
+
 Built and maintained by Anirudh
 
 📧 sharma23ani@gmail.com
 
-🌐 GitHub Repository
+anirudh46-cse
 
 
